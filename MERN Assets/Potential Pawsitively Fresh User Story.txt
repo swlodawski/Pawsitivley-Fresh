@@ -9,7 +9,7 @@ Potential Pawsitively Fresh User Story
 
 Acceptance Criteria
 
-* User is presented with a UX/UI
+* User is presented with a UX/UI.
 
 * User is able to create an account
 
@@ -19,7 +19,7 @@ Acceptance Criteria
 
 * User is then present with options about their pet
 	Type: Dog or Cat
-	Size: large, medium, small
+	Size: [large, medium, small]
 	Dietary Needs: An array that has preselected ingredients that may cause issues for pet [chicken, rice, turkey, corn, ect].
 
-* User is then take to the list of foods that will meet those dietary requirements.
+* User is then taken to the list of foods that will meet those dietary requirements.
