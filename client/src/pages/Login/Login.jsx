@@ -52,15 +52,15 @@ function Login(props) {
   };
 }
 
-const Login = () => {
-    return (
-      <div>
-        <div><h1>Register</h1>
-        <p>User registration available soon</p></div><br />
-        <h1>Login</h1>
-        <p>Login page coming soon!</p>
-      </div>
-    );
-  };
+// const Login = () => {
+//     return (
+//       <div>
+//         <div><h1>Register</h1>
+//         <p>User registration available soon</p></div><br />
+//         <h1>Login</h1>
+//         <p>Login page coming soon!</p>
+//       </div>
+//     );
+//   };
   
   export default Login;
