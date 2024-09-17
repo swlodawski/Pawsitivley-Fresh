@@ -27,6 +27,10 @@ const productSchema = new Schema({
     ingredients: {
        type: [String],
        required: true
+    },
+    isDogFood: {
+        type: Boolean,
+        required: true
     }
 
 });
