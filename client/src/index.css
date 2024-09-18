@@ -42,7 +42,8 @@ body {
 
 #header{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   background-color: var(--drk-green);
   height: 125px;
   width: 100%;  
@@ -51,6 +52,7 @@ body {
 #logo img{
   height:85px;
   margin: 10px;
+  margin-right: 80px;
 }
 
 ul{
@@ -71,15 +73,22 @@ a:link{
 text-decoration: none;
 }
 
+.nav {
+  margin-left: 45px;
+}
+
 button{
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--lt-green);
   border: none;
   height: 40px;
   width: 150px;
-  margin: 10px;
-  border-radius: 12px;
+  margin-top: 30px;
+  margin-left: 280px;
+  margin-right: 10px;
+  border-radius: 20px;
 }
 
 #log-in{
