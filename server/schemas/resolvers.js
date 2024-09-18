@@ -27,14 +27,14 @@ const resolvers = {
     },
 
     // Fetch all foods
-    foods: async () => {
-      return await Food.find(); // Returns all food items from the db
-    },
+    // foods: async () => {
+      // return await Food.find(); // Returns all food items from the db
+    // },
 
-    //Fetch a food item by ID
-    food: async (parent, { id }) => {
-      return await Food.findById(id); // Finds a food item by ID
-    },
+    // Fetch a food item by ID
+    // food: async (parent, { id }) => {
+    //   return await Food.findById(id);  Finds a food item by ID
+    // },
 
     // Fetch all orders
     orders: async () => {
@@ -71,10 +71,10 @@ const resolvers = {
     },
 
     // Add a new food item
-    addFood: async (parent, { name, type }) => {
-      const food = new Food({ name, type }); // Creates a new food instance with provided details
-      return await food.save(); // Saves the new food item to the db
-    },
+    // addFood: async (parent, { name, type }) => {
+    //   const food = new Food({ name, type }); Creates a new food instance with provided details
+    //   return await food.save(); Saves the new food item to the db
+    // },
 
     // Resolver to add a new order
     addOrder: async (parent, { user, products }) => {
@@ -107,13 +107,13 @@ const resolvers = {
     },
 
     // Update an existing food item by ID
-    updateFood: async (parent, { id, name, type }) => {
-      return await Food.findByIdAndUpdate(
-        id, // ID of the food item to update
-        { name, type }, // New details to update
-        { new: true, runValidators: true } // Options: return the updated document and validate the update
-      );
-    },
+    // updateFood: async (parent, { id, name, type }) => {
+    //   return await Food.findByIdAndUpdate(
+       // id,  ID of the food item to update
+        //{ name, type }, // New details to update
+       // { new: true, runValidators: true } // Options: return the updated document and validate the update
+      //);
+    //},
 
     // Update an existing order by ID
     updateOrder: async (parent, { id, user, products }) => {
@@ -144,9 +144,9 @@ const resolvers = {
     },
 
     // Delete a food item by ID
-    deleteFood: async (parent, { id }) => {
-      return await Food.findByIdAndDelete(id); // Deletes the food item with the specified ID
-    },
+    // deleteFood: async (parent, { id }) => {
+    //   return await Food.findByIdAndDelete(id);  Deletes the food item with the specified ID
+    // },
 
     // Delete an order by ID
     deleteOrder: async (parent, { id }) => {
