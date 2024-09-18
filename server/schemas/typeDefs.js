@@ -8,17 +8,16 @@ type User {
 }
 type Order{
     date: Date
-    user: [Users]
+    user: User
 
 type Pet {
     animal: String
     size: String
     allergies: [String]
 }
-type Order {
-    date: Date
-    products: [Product]
-    users: [User]
+type Product {
+    name: String
+    price: Float
 }
 
 type Query {
