@@ -10,6 +10,8 @@ import Why from './pages/Why/Why.jsx';
 import Login from './pages/Login/Login.jsx';
 import './index.css';
 
+// import 'bootstrap/dist/css/bootstrap.min.css'
+
 const router = createBrowserRouter([
   {
     path: '/',
