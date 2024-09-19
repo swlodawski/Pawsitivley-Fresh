@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const db = require('../config/connection');
 const User = require('../models/User');
 const Pet = require('../models/Pet');
-// const Food = require('../models/Food');
 const Order = require('../models/Order');
 const Product = require('../models/Product');
 
