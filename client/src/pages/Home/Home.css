@@ -1,21 +1,33 @@
-.modak-regular {
-  color:#fca94d;  
+.header-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  background-color: #dafde2;
 }
 
-#freshly-crafted {
+.home-container {
+  margin-left: 200px;
+  margin-top: 230px;
+}
+
+.modak-regular{
+  color: #fca94d;
+}
+
+#freshly-crafted{
   margin-left: 50px;
 }
 
-.mooli-regular {
-  font-family: 'Mooli';
-  font-size: 26px;
+#find-out{
+  margin-left: 110px;
 }
 
-.lets-go-btn {
+.lets-go-btn{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 200px;
+  margin-left: 215px;
   border-radius: 50px;
   border: none;
   color: black;
@@ -26,17 +38,12 @@
   padding-left: 10px;
 }
 
-.arrow {
+.arrow{
   padding-left: 10px;
   padding-bottom: 15px;
   font-size: 40px;
   font-weight: bold;
   color: black;
-}
-
-.home-container {
-  margin-left: 200px;
-  margin-top: 230px;
 }
 
 .dogImage {
@@ -61,8 +68,8 @@
 
 .pawPrints2 {
   position: absolute;
-  margin-top: -1100px;
-  margin-left: 400px;
+  margin-top: -1100px; 
+  margin-left: 300px; 
   transform: rotate(85deg);
   height: 1300px;
   width: 1100px;

@@ -6,24 +6,22 @@ type User {
     pets: [Pet]
     orders: [Order]
 }
-type Order{
-    date: Date
-    user: [Users]
 
 type Pet {
     animal: String
     size: String
     allergies: [String]
 }
+
 type Order {
-    purchaseDate: Date
-    products: [Product]
+    purchaseDate: String
+    products: Product
     users: [User]
 }
 
 type Query {
     users: [User]
-    orders: [Orders]
+    orders: [Order]
     pets: [Pet]
 }
 
@@ -33,6 +31,6 @@ type Mutation {
     addPet(animal: String!, size: String!, allergies: [String]): Pet
 }
 `;
-// The typeDefs is crazy maybe we could all take a look at the queris/mutations parts. I believe I set the tables refs correctly. I could be wrong though
+
 
 module.exports = typeDefs;
