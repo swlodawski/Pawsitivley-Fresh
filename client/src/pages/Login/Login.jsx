@@ -10,7 +10,7 @@ function Signup(props) {
   const [addUser] = useMutation(ADD_USER)
 
   const handleFormSubmit = async (event) => {
-    event.preventDefaultr();
+    event.preventDefault();
     const mutationsResponse = await addUser({
       variables: {
         email: formState.email,
@@ -34,7 +34,7 @@ function Login(props) {
   const [loginUser] = useMutation(LOGIN_USER)
 
   const handleFormSubmit = async (event) => {
-    event.preventDefaultr();
+    event.preventDefault();
     const mutationsResponse = await loginUser({
       variables: {
         email: formState.email,
@@ -52,15 +52,5 @@ function Login(props) {
   };
 }
 
-// const Login = () => {
-//     return (
-//       <div>
-//         <div><h1>Register</h1>
-//         <p>User registration available soon</p></div><br />
-//         <h1>Login</h1>
-//         <p>Login page coming soon!</p>
-//       </div>
-//     );
-//   };
   
   export default Login;
