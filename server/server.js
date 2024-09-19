@@ -1,6 +1,6 @@
 const express = require('express');
 const { ApolloServer } = require('@apollo/server');
-const { expressMiddelware } = require('@apollo/server/express4');
+const { expressMiddleware } = require('@apollo/server/express4');
 const path = require('path');
 const { authMiddleware } = require('./utils/auth');
 
@@ -33,10 +33,6 @@ const startApolloServer = async () => {
         });
     }
 
-    app.listen(PORT, () =>
-        console.log(`Example app listening at http://localhost:${PORT}`)
-      );
-      
     db.once('open', () => {
         app.listen(PORT, () => {
             console.log(`API Server running on ${PORT}`);

@@ -6,18 +6,16 @@ type User {
     pets: [Pet]
     orders: [Order]
 }
-type Order{
-    date: Date
-    user: [Users]
 
 type Pet {
     animal: String
     size: String
     allergies: [String]
 }
+
 type Order {
-    purchaseDate: Date
-    products: [Product]
+    purchaseDate: String
+    products: Product
     users: [User]
 }
 
