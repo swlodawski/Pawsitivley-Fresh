@@ -19,17 +19,26 @@ type Order {
     users: [User]
 }
 
+type Product {
+    name: String
+    description: String
+    image: String
+    price: Float
+    ingredients: [String]
+    isDogFood: Boolean
+}
+
 type Query {
     users: [User]
-    orders: [Orders]
+    orders: Order
     pets: [Pet]
 }
 
-type Mutation {
-    addUser(username: String!, email: String, password: String!): User
-    addOrder(userId: ID!, products: [ID!]!): Order
-    addPet(animal: String!, size: String!, allergies: [String]): Pet
-}
+// type Mutation {
+//     addUser(username: String!, email: String, password: String!): User
+//     addOrder(userId: ID!, products: [ID!]!): Order
+//     addPet(animal: String!, size: String!, allergies: [String]): Pet
+// }
 `;
 // The typeDefs is crazy maybe we could all take a look at the queris/mutations parts. I believe I set the tables refs correctly. I could be wrong though
 
