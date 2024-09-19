@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const db = require('../config/connection');
 const User = require('../models/User');
 const Pet = require('../models/Pet');
-const Food = require('../models/Food');
 const Order = require('../models/Order');
 const Product = require('../models/Product');
 
@@ -15,7 +14,7 @@ const cleanDB = async () => {
     const collections = [
       'users',    // Collection for User model
       'pets',     // Collection for Pet model
-      'foods',    // Collection for Food model
+      // 'foods',    Collection for Food model
       'orders',   // Collection for Order model
       'products'  // Collection for Product model
     ];
