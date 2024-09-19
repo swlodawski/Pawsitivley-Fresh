@@ -16,7 +16,7 @@ type Pet {
     allergies: [String]
 }
 type Order {
-    date: Date
+    purchaseDate: Date
     products: [Product]
     users: [User]
 }
