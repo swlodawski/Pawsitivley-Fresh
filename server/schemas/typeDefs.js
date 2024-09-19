@@ -30,7 +30,11 @@ type Product {
 
 type Query {
     users: [User]
+<<<<<<< HEAD
+    orders: [Order]
+=======
     orders: Order
+>>>>>>> 0cb5fa3cda1dfc0fc4a03e2e9df5ec4d87066b0f
     pets: [Pet]
 }
 
@@ -40,6 +44,6 @@ type Query {
 //     addPet(animal: String!, size: String!, allergies: [String]): Pet
 // }
 `;
-// The typeDefs is crazy maybe we could all take a look at the queris/mutations parts. I believe I set the tables refs correctly. I could be wrong though
+
 
 module.exports = typeDefs;
