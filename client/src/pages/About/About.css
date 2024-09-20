@@ -1,0 +1,54 @@
+:root {
+    --lt-green: #a5ce85;
+    --orange: #fca94d;
+    --drk-green: #162a15;
+    font-family: 'Mooli';
+}
+
+#about-container {
+    position: relative; 
+    height: 100vh; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 0px; 
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+#about-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../assets/images/running-pupper.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.5; 
+    z-index: 1; 
+}
+
+#about-container h1,
+#about-container p {
+    position: relative;
+    z-index: 2; 
+    margin-left: 170px; 
+}
+
+#about-container h1 {
+    text-align: left; 
+    color: var(--drk-green);
+    font-size: 70px;
+}
+
+#about-container p {
+    color: var(--drk-green);
+    margin: 0;
+    font-size: 21px;
+    padding-left: 80px; 
+    max-width: 600px; 
+}

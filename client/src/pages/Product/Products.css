@@ -8,13 +8,14 @@
 
 
 .product-card {
-    width: 280px;
+    width: 600px;
     margin: 16px;
     padding: 16px 16px 40px;
     text-align: center;
     font-family: 'Mooli';
-    border: 1px solid #ddd;
-    border-radius: 50px;
+    background-image: linear-gradient(  #f8fff3, #8bbc62);
+    border: 2px solid #122a09;
+    border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
@@ -29,21 +30,22 @@
 
 
 .product-image {
-    width: 100%;
-    height: auto;
+    width: 350px;
+    height: 375px;
     margin-bottom: 16px;
+    border-radius: 12px;
 }
 
 
 .product-card h2 {
-    font-size: 1.5em;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 8px;
 }
 
 
 .product-card .description {
-    font-size: 0.95em;
+    font-size: 15px;
     font-weight: normal;
     margin-bottom: 12px;
 }
