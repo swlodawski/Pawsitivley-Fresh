@@ -2,7 +2,7 @@
 import React from 'react';
 import './products.css';
 // import dogSalmon from "../../../../../../dog-salmon.jpg";
-// import catFish from "../../../../../../cat-fish.jpg";
+
 
 const products = [
   {
