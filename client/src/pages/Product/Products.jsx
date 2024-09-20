@@ -1,16 +1,16 @@
 // src/pages/Product/Products.jsx
 import React from 'react';
 import './products.css';
-import dogSalmon from '../../assets/seed-images/dog-salmon.jpg';
-import catFish from '../../assets/seed-images/cat-fish.jpg';
-import catMeat from '../../assets/seed-images/cat-meat.jpg';
-import dogTurkey from '../../assets/seed-images/dog-turkey.jpg';
-import dogBeef from '../../assets/seed-images/dog-beef.jpg';
-import dogChicken from '../../assets/seed-images/dog-chicken.jpg';
-import dogEgg from '../../assets/seed-images/dog-egg.jpg';
-import dogSensitive from '../../assets/seed-images/dog-sensitive.jpg';
-import dogCod from '../../assets/seed-images/dog-cod.jpg';
-import dogLamb from '../../assets/seed-images/dog-lamb.jpg';
+import dogSalmon from '../../assets/seed-images/seed-images-no-background/dog-salmon-removebg-preview.png';
+import catFish from '../../assets/seed-images/seed-images-no-background/cat-fish-removebg-preview.png';
+import catMeat from '../../assets/seed-images/seed-images-no-background/cat-meat-removebg-preview.png';
+import dogTurkey from '../../assets/seed-images/seed-images-no-background/dog-turkey-removebg-preview.png';
+import dogBeef from '../../assets/seed-images/seed-images-no-background/dog-beef-removebg-preview.png';
+import dogChicken from '../../assets/seed-images/seed-images-no-background/dog-chicken-removebg-preview.png';
+import dogEgg from '../../assets/seed-images/seed-images-no-background/dog-egg-removebg-preview.png';
+import dogSensitive from '../../assets/seed-images/seed-images-no-background/dog-sensitive-removebg-preview.png';
+import dogCod from '../../assets/seed-images/seed-images-no-background/dog-cod-removebg-preview.png';
+import dogLamb from '../../assets/seed-images/seed-images-no-background/dog-lamb-removebg-preview.png';
 
 
 
