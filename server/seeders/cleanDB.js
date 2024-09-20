@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const db = require('../config/connection');
+const dbConnection = require('../config/connection');
 const User = require('../models/User');
 const Pet = require('../models/Pet');
 const Order = require('../models/Order');
@@ -7,23 +7,42 @@ const Product = require('../models/Product');
 
 const cleanDB = async () => {
   try {
-    // Connecting to db
-    await db;
+    // Ensure the database connection is established
+    await new Promise((resolve, reject) => {
+      if (mongoose.connection.readyState === 1) {
+        // Connection is already open
+        resolve();
+      } else {
+        mongoose.connection.on('error', (err) => {
+          console.error('MongoDB connection error:', err);
+          reject(err);
+        });
+        mongoose.connection.once('open', () => {
+          console.log('MongoDB connected');
+          resolve();
+        });
+      }
+    });
+
+    // Now mongoose.connection.db should be available
+    const db = mongoose.connection.db;
 
     // List of collection names to drop
     const collections = [
       'users',    // Collection for User model
       'pets',     // Collection for Pet model
-      // 'foods',    Collection for Food model
+      // 'foods',    // Collection for Food model
       'orders',   // Collection for Order model
-      'products'  // Collection for Product model
+      'products', // Collection for Product model
     ];
 
     // Drop each collection if it exists
     for (const collection of collections) {
-      const collectionExists = await mongoose.connection.db.listCollections({ name: collection }).toArray();
+      const collectionExists = await db
+        .listCollections({ name: collection })
+        .toArray();
       if (collectionExists.length) {
-        await mongoose.connection.db.dropCollection(collection);
+        await db.dropCollection(collection);
         console.log(`Dropped collection: ${collection}`);
       }
     }
@@ -36,4 +55,5 @@ const cleanDB = async () => {
   }
 };
 
-cleanDB(); 
+module.exports = cleanDB;
+
