@@ -1,47 +1,90 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { useMutation } from '@apollo/client';
-import { ADD_USER } from '../../utils/mutations';
+// import { useState } from "react";
+// import { Link } from "react-router-dom";
+// import { useMutation } from '@apollo/client';
+// import Auth from '../../utils/auth';
+// import { ADD_USER } from '../../utils/mutations';
 
-function Signup(props) {
-    const [formState, setFormState] = ({email: '', password: ''});
-    const [addUser] = useMutation(ADD_USER);
 
-    const handleFormSuubmit = async (e) => {
-        e.preventDefault();
-        const mutationResponse = await addUser({
-            variables: {
-                email: formState.email,
-                password: formState.password,
-                
-            }
-        })
-    }
+function Signup() {
+    // const [formState, setFormState] = useState({username: '', email: '', password: ''});
+    // const [addUser] = useMutation(ADD_USER);
 
+    // const handleFormSubmit = async (e) => {
+    //     e.preventDefault();
+    //     const mutationResponse = await addUser({
+    //         variables: {
+    //             email: formState.email,
+    //             password: formState.password,
+    //         },
+    //     });
+    //     const token = mutationResponse.data.addUser.token;
+    //     Auth.Login(token);
+    // };
+
+    // const handleChange = (event) => {
+    //     const { name, value } = event.target;
+    //     setFormState({
+    //         ...formState,
+    //         [name]: value, 
+    //     });
+    // };
+
+    return (
+    <div className="container">
+    <p> SignUp Page?</p>
+    </div>
+  );
 }
-// Brought signup function from login page. Will most likely noty need it because Ms Nevahs is perfect but got it off login page to separate concerns.
 
-// function Signup(props) {
-//     const [ formState, setFormState] = useState({ username: '', password: '', email: '', })
-//     const [addUser] = useMutation(ADD_USER)
-  
-//     const handleFormSubmit = async (event) => {
-//       event.preventDefaultr();
-//       const mutationsResponse = await addUser({
-//         variables: {
-//           email: formState.email,
-//           username: formState.username,
-//           password: formState.password
-//         },
-//       });
-//     };
-  
-//     const handleChange = (event) => {
-//       const { name, value} = event.target;
-//       setFormState({
-//         ...formState,
-//         [name]: value
-//       });
-//     };
-//   }
-//   
+
+export default Signup;
+   
+      {/* <Link to="/login">← Go to Login</Link>
+
+      <h2>Signup</h2>
+      <form onSubmit={handleFormSubmit}>
+        <div className="flex-row space-between my-2">
+          <label htmlFor="firstName">First Name:</label>
+          <input
+            placeholder="First"
+            name="firstName"
+            type="firstName"
+            id="firstName"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="flex-row space-between my-2">
+          <label htmlFor="lastName">Last Name:</label>
+          <input
+            placeholder="Last"
+            name="lastName"
+            type="lastName"
+            id="lastName"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="flex-row space-between my-2">
+          <label htmlFor="email">Email:</label>
+          <input
+            placeholder="youremail@test.com"
+            name="email"
+            type="email"
+            id="email"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="flex-row space-between my-2">
+          <label htmlFor="pwd">Password:</label>
+          <input
+            placeholder="******"
+            name="password"
+            type="password"
+            id="pwd"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="flex-row flex-end">
+          <button type="submit">Submit</button>
+        </div>
+      </form> */}
+   
