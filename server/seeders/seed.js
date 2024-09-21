@@ -87,7 +87,23 @@ const products = await Product.insertMany([
         price: 27.99,
         ingredients: ['Lamb', 'Bone Broth', 'Peas', 'Carrot', 'Brown Rice', 'Vitamin Blend'],
         isDogFood: true
-    }
+    },
+    {
+        name: 'Cat-astrophic Cravings',
+        description: 'Your felines new favorite is here! Cat-astrophic Cravings delivers a delicious seafood experience that’s perfect for picky eaters. Packed with flavor and nutrients, this fishy feast is crafted for cats with a love for the ocean. Say goodbye to mealtime drama—this blend will have your kitty diving in for seconds!',
+        image: catCravings,
+        price: 25.99,
+        ingredients: ['Cod', 'Anchovy Oil', 'Pumpkin', 'Spinach','Vitamin Blend'],
+        isDogFood: false
+      },
+      {
+        name: 'Claw-some Cuisine',
+        description: 'Dive into deliciousness with Claw-some Cuisine! This purr-fectly crafted seafood blend is designed for your feline friend who loves all things aquatic. Packed with flavors and nutrients, this recipe ensures your kitty enjoys every bite while supporting their health and well-being. No poultry here—just pure fishy goodness for the discerning palate!',
+        image: clawsome,
+        price: 25.99,
+        ingredients: ['Salmon', 'Fish Broth', 'Sweet Potato', 'Carrots', 'Blueberries','Vitamin Blend'],
+        isDogFood: false
+      }
 
 
 ]);

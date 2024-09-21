@@ -6,7 +6,6 @@
     padding: 40px;
 }
 
-
 .product-card {
     width: 400px;
     margin: 25px;
@@ -31,7 +30,7 @@
 
 
 .product-image {
-    width: 240px;
+    width: 250px;
     height: 275px;
     border-radius: 50px;
 }
