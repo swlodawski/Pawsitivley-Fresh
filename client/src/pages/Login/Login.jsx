@@ -1,58 +1,65 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from '@apollo/client';
-// import { LOGIN_USER } from '../../utils/mutations'
-// This will be where we bring in the MUTATIONS to adduser from client side.
+import './Login.css';
+// import { LOGIN_USER } from '../../utils/mutations';
 
 function Login(props) {
-//   const [ formState, setFormState] = useState({ username: '', email: '', password: '' })
-//   const [loginUser] = useMutation(LOGIN_USER)
+  const [formState, setFormState] = useState({ username: '', email: '', password: '' });
+  // const [loginUser] = useMutation(LOGIN_USER);
 
-//   const handleFormSubmit = async (event) => {
-//     event.preventDefault();
-//     const mutationsResponse = await loginUser({
-//       variables: {
-//         username: formState.username,
-//         email: formState.email,
-//         password: formState.password
-//       },
-//     });
-//   };
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    // Uncomment and implement mutation logic here
+    // const mutationResponse = await loginUser({
+    //   variables: { username: formState.username, email: formState.email, password: formState.password },
+    // });
+    // Handle response or errors
+  };
 
-//   const handleChange = (event) => {
-//     const { name, value} = event.target;
-//     setFormState({
-//       ...formState,
-//       [name]: value
-//     });
-//   };
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormState({
+      ...formState,
+      [name]: value
+    });
+  };
 
-    return (
-      <div>
-        <h1>Login</h1>
-        <form> 
+  return (
+    <div>
+      <form className="form-container" onSubmit={handleFormSubmit}> 
+      <h1 className="login">Login</h1>
         <div className="username-container">
-        <label htmlFor="userName">Username:</label>
-        <input placeholder="username" name="username" id="username" type="username"/>
+          <label htmlFor="username">USERNAME:</label>
+          <input 
+            placeholder="Username" 
+            name="username" 
+            id="username" 
+            type="text" 
+            value={formState.username} 
+            onChange={handleChange} 
+          />
         </div>
 
-        <div className="email-container">
-        <label htmlFor="email">Email Address:</label>
-        <input placeholder="email" name="email" id="email" type="email" />
-        </div>
-
+    
         <div className="password-container">
-        <label htmlFor="password">Password:</label>
-        <input placeholder="********" name="password" id="password" type="password"/>
+          <label htmlFor="password">PASSWORD:</label>
+          <input 
+            placeholder="********" 
+            name="password" 
+            id="password" 
+            type="password" 
+            value={formState.password} 
+            onChange={handleChange} 
+          />
         </div>
  
-        <div className="submit-btn">
-            <button type="submit">Submit</button>
+        <div className="submit-btn" >
+          <button type="submit">Submit</button>
         </div>
+      </form> 
+    </div>
+  );
+}
 
-    </form> 
-      </div>
-    );
-  };
-  
-  export default Login;
+export default Login;

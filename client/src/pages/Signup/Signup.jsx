@@ -95,7 +95,7 @@ function Signup() {
             <p>What type of proteins do your pets like?</p>
 
         <input type="checkbox" id="opt1" name="opt1" value="All" />
-        <label htmlFor="opt1"> All Protien Choices</label><br></br>
+        <label htmlFor="opt1"> All Protein Choices</label><br></br>
         <input type="checkbox" id="opt2" name="opt2" value="Chicken" />
         <label htmlFor="opt2">Chicken</label><br></br>
         <input type="checkbox" id="opt3" name="opt3" value="Turkey" />
