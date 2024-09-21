@@ -6,7 +6,7 @@ import Home from './pages/Home/Home.jsx';
 import About from './pages/About/About.jsx';
 import Products from './pages/Product/Products.jsx';
 import Reviews from './pages/Review/Reviews.jsx';
-import Why from './pages/Why/Why.jsx';
+import Profile from './pages/Profile/Profile.jsx';
 import Login from './pages/Login/Login.jsx';
 import Signup from './pages/Signup/Signup.jsx';
 import './index.css';
@@ -35,8 +35,8 @@ const router = createBrowserRouter([
         element: <Reviews />, 
       },
       {
-        path: '/why', 
-        element: <Why />, 
+        path: '/profile', 
+        element: <Profile />, 
       },
       {
         path: '/login', 
