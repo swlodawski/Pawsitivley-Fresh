@@ -25,9 +25,9 @@ function Nav() {
                     </Link>
                 </li>
 
-                  <li className='nav-item' id='why-us'>
-                  <Link to='/why' className={currentPage === 'Why' ? 'nav-link active' : 'nav-link '}>
-                        <h3 className='modak-regular'>Why Us</h3>
+                  <li className='nav-item' id='profile'>
+                  <Link to='/profile' className={currentPage === 'Profile' ? 'nav-link active' : 'nav-link '}>
+                        <h3 className='modak-regular'>My Profile</h3>
                     </Link>
                 </li>  
 
