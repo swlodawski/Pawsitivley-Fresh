@@ -1,13 +1,82 @@
+:root {
+    --lt-green: #a5ce85;
+    --orange: #fca94d;
+    --drk-green: #162a15;
+    font-family: 'Mooli';
+}
 
 #pets-header {
     text-align: center;
-    font-family: 'Mooli';
-    color: #162a15;
+    color: var(--drk-green);
     padding: 30px;
-    
+    font-size: 50px;
+    background-color: var(--orange);
+    margin: 40px;
+    border-radius: 10px;
 }
 
 .pets-container {
-    margin: 100px;
+    margin: 0px 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: var(--lt-green);
+    border-radius: 20px;
+    padding: 40px;
+}
 
+.pet-profile {
+    border: 4px solid var(--drk-green);
+    background-color: rgb(208, 237, 213);
+    border-radius: 10px;
+    padding: 0px 10px;
+    margin: 10px 30px;
+    width: 200px;
+    height: 300px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.pets-container h2 {
+    font-size: 35px;
+    color: white;
+    background-color: var(--drk-green);
+    padding: 15px 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.pets-container p {
+    color: var(--drk-green);
+    text-align: center;
+    padding: 0;
+    margin: 5px;
+}
+
+.animal, .size {
+    font-size: 25px;
+}
+
+
+#add-pet-btn {
+    background-color: var(--orange);
+    color: var(--drk-green);
+    border: 4px solid var(--drk-green);
+    font-size: 20px;
+    padding: 30px 100px;
+    text-wrap: nowrap;
+    font-weight: bold; 
+}
+
+.button-container {
+    display: flex;
+    margin-right: 265px;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
 }
