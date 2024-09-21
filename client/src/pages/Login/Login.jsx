@@ -5,27 +5,27 @@ import { useMutation } from '@apollo/client';
 // This will be where we bring in the MUTATIONS to adduser from client side.
 
 function Login(props) {
-//   const [ formState, setFormState] = useState({ username: '', email: '', password: '' })
-//   const [loginUser] = useMutation(LOGIN_USER)
+  const [ formState, setFormState] = useState({ username: '', email: '', password: '' })
+  const [loginUser] = useMutation(LOGIN_USER)
 
-//   const handleFormSubmit = async (event) => {
-//     event.preventDefault();
-//     const mutationsResponse = await loginUser({
-//       variables: {
-//         username: formState.username,
-//         email: formState.email,
-//         password: formState.password
-//       },
-//     });
-//   };
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    const mutationsResponse = await loginUser({
+      variables: {
+        username: formState.username,
+        email: formState.email,
+        password: formState.password
+      },
+    });
+  };
 
-//   const handleChange = (event) => {
-//     const { name, value} = event.target;
-//     setFormState({
-//       ...formState,
-//       [name]: value
-//     });
-//   };
+  const handleChange = (event) => {
+    const { name, value} = event.target;
+    setFormState({
+      ...formState,
+      [name]: value
+    });
+  };
 
     return (
       <div>
