@@ -78,3 +78,92 @@
   width: 1100px;
   z-index: 3;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .home-container {
+    margin-left: 20px;
+    margin-top: 100px;
+  }
+
+  .lets-go-btn {
+    margin-left: 0;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .arrow {
+    font-size: 30px;
+    padding-left: 5px;
+  }
+
+  .dogImage {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+    border-radius: 50px;
+  }
+
+  .pawPrints {
+    height: 1000px;
+    width: 800px;
+    margin-top: -500px;
+    margin-left: -150px;
+  }
+
+  .pawPrints2 {
+    height: 1000px;
+    width: 800px;
+    margin-top: -900px;
+    margin-left: 100px;
+  }
+
+  #freshly-crafted {
+    margin-left: 20px;
+  }
+
+  #find-out {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+
+  .lets-go-btn {
+    width: 100%;
+    margin-left: 0;
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .arrow {
+    font-size: 25px;
+  }
+
+  .dogImage {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 10px;
+    border-radius: 30px;
+  }
+
+  .pawPrints, .pawPrints2 {
+    display: none; 
+  }
+
+  #freshly-crafted {
+    margin-left: 0;
+    font-size: 24px;
+  }
+
+  #find-out {
+    margin-left: 0;
+    font-size: 18px;
+  }
+}
