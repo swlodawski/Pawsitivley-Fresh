@@ -15,11 +15,12 @@ type Pet {
 
 type Order {
     purchaseDate: String
-    products: Product
-    users: [User]
+    products: [Product]
+    user: User
 }
 
 type Product {
+    _id: ID
     name: String
     description: String
     image: String
@@ -40,21 +41,17 @@ type Query {
 }
 
 type Mutation {
-
     addUser(username: String!, email: String, password: String!): User
     updateUser(id: ID!, username: String, email: String, password: String): User
     deleteUser(id: ID!): User
-
 
     addPet(animal: String!, size: String!, allergies: [String]): Pet
     updatePet(id: ID!, animal: String, size: String, allergies: [String]): Pet
     deletePet(id: ID!): Pet
 
-
     addOrder(userId: ID!, products: [ID!]!): Order
     updateOrder(id: ID!, userId: ID, products: [ID!]): Order
     deleteOrder(id: ID!): Order
-
 
     addProduct(
         name: String!,
