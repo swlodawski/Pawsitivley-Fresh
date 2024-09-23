@@ -80,3 +80,82 @@
     align-items: center;
     margin-top: 20px;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #pets-header {
+        font-size: 40px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .pets-container {
+        margin: 0 20px;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .pet-profile {
+        width: 180px;
+        height: 280px;
+        margin: 15px 10px;
+    }
+
+    .pets-container h2 {
+        font-size: 28px;
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+
+    .animal, .size {
+        font-size: 22px;
+    }
+
+    #add-pet-btn {
+        font-size: 18px;
+        padding: 20px 80px;
+    }
+
+    .button-container {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #pets-header {
+        font-size: 30px;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .pets-container {
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+    .pet-profile {
+        width: 150px;
+        height: 250px;
+        margin: 10px 5px;
+    }
+
+    .pets-container h2 {
+        font-size: 24px;
+        padding: 8px 15px;
+    }
+
+    .animal, .size {
+        font-size: 20px;
+    }
+
+    #add-pet-btn {
+        font-size: 16px;
+        padding: 15px 60px;
+    }
+
+    .button-container {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}
