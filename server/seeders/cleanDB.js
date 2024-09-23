@@ -31,7 +31,6 @@ const cleanDB = async () => {
     const collections = [
       'users',    // Collection for User model
       'pets',     // Collection for Pet model
-      // 'foods',    // Collection for Food model
       'orders',   // Collection for Order model
       'products', // Collection for Product model
     ];
@@ -48,7 +47,7 @@ const cleanDB = async () => {
     }
 
     console.log('Database cleaned!');
-    process.exit(0); // Exit the process after cleaning
+    // Remove process.exit here, allow seeding to continue
   } catch (err) {
     console.error('Error cleaning database:', err);
     process.exit(1); // Exit with an error code
@@ -56,4 +55,3 @@ const cleanDB = async () => {
 };
 
 module.exports = cleanDB;
-

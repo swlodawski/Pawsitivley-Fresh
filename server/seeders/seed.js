@@ -3,9 +3,7 @@ const { User, Pet, Product } = require('../models');
 const cleanDB = require('./cleanDB');
 
 db.once('open', async () => {
-    await cleanDB('Product', 'products');
-    await cleanDB('Pet', 'pets');
-    await cleanDB('User','users');
+    await cleanDB();  
 
 const products = await Product.insertMany([
     {
@@ -88,27 +86,29 @@ const products = await Product.insertMany([
         ingredients: ['Lamb', 'Bone Broth', 'Peas', 'Carrot', 'Brown Rice', 'Vitamin Blend'],
         isDogFood: true
     },
-    {
-        name: 'Cat-astrophic Cravings',
-        description: 'Your felines new favorite is here! Cat-astrophic Cravings delivers a delicious seafood experience that’s perfect for picky eaters. Packed with flavor and nutrients, this fishy feast is crafted for cats with a love for the ocean. Say goodbye to mealtime drama—this blend will have your kitty diving in for seconds!',
-        image: catCravings,
-        price: 25.99,
-        ingredients: ['Cod', 'Anchovy Oil', 'Pumpkin', 'Spinach','Vitamin Blend'],
-        isDogFood: false
-      },
-      {
-        name: 'Claw-some Cuisine',
-        description: 'Dive into deliciousness with Claw-some Cuisine! This purr-fectly crafted seafood blend is designed for your feline friend who loves all things aquatic. Packed with flavors and nutrients, this recipe ensures your kitty enjoys every bite while supporting their health and well-being. No poultry here—just pure fishy goodness for the discerning palate!',
-        image: clawsome,
-        price: 25.99,
-        ingredients: ['Salmon', 'Fish Broth', 'Sweet Potato', 'Carrots', 'Blueberries','Vitamin Blend'],
-        isDogFood: false
-      }
+    // {
+    //     name: 'Cat-astrophic Cravings',
+    //     description: 'Your felines new favorite is here! Cat-astrophic Cravings delivers a delicious seafood experience that’s perfect for picky eaters. Packed with flavor and nutrients, this fishy feast is crafted for cats with a love for the ocean. Say goodbye to mealtime drama—this blend will have your kitty diving in for seconds!',
+    //     image: catCravings,
+    //     price: 25.99,
+    //     ingredients: ['Cod', 'Anchovy Oil', 'Pumpkin', 'Spinach','Vitamin Blend'],
+    //     isDogFood: false
+    //   },
+    //   {
+    //     name: 'Claw-some Cuisine',
+    //     description: 'Dive into deliciousness with Claw-some Cuisine! This purr-fectly crafted seafood blend is designed for your feline friend who loves all things aquatic. Packed with flavors and nutrients, this recipe ensures your kitty enjoys every bite while supporting their health and well-being. No poultry here—just pure fishy goodness for the discerning palate!',
+    //     image: clawsome,
+    //     price: 25.99,
+    //     ingredients: ['Salmon', 'Fish Broth', 'Sweet Potato', 'Carrots', 'Blueberries','Vitamin Blend'],
+    //     isDogFood: false
+    //   }
 
 
 ]);
 
 console.log('Products successfully seeded!', products);
+
+console.log("Product Model:", Product);
 
 const pets = await Pet.insertMany([
     {
@@ -135,6 +135,7 @@ const pets = await Pet.insertMany([
 
 console.log("Pets successfuly seeded!", pets);
 
+
 await User.create({
     username: 'petlover24',
     password: 'furbaby123',
@@ -147,14 +148,10 @@ await User.create({
             allergies: ['Turkey', 'Chicken']
         }
     ]
-
 });
 
 console.log("User successfully seeded!");
-
 console.log("All data inserted");
 
-process.exit();
-
-    
+process.exit();  
 });

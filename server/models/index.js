@@ -4,4 +4,4 @@ const Product = require('./Product');
 const Order = require('./Order');
 
 
-module.esports = { User, Pet, Product, Order };
+module.exports = { User, Pet, Product, Order };
