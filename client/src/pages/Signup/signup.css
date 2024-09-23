@@ -1,7 +1,117 @@
-/* .container{
+.SignUpForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.SignUpFormContainer{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(rgb(246, 181, 59), rgb(255, 237, 200));
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+/* input, option, select {
+    background-color: #ccc;
+} */
+
+.progress-bar {
+    width: 400px;
+    height: 20px;
+    background-color: white;
+    margin-bottom: 25px; 
+    border:  1px solid black;
+}
+
+.progress-bar div{
+    width: 33.3%;
+    height: 100%;
+    background-color: rgb(98, 0, 255);
+}
+
+.SignUpFormContainer .SU-header{
+flex: 20%;
+display: grid;
+place-items: center;
+
+}
+
+.SignUpFormContainer .SU-body{
+    flex: 60%;
+}
+
+.SignUpFormContainer .SU-footer{
+flex: 20%;
+display: flex;
+justify-content: center;
+}
+
+.SignUpFormContainer .SU-footer button {
+    border-radius: 7px;
+    height: 40px;
+    width: 100px;
+    padding: 10px 15px;
+    margin: 10px 45px;
+}
+
+.personalInfo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personalInfo input{
+margin: 5px;
+width: 350px;
+padding-left: 5px;
+font-size: 20px;
+background-color: #ccc;
+}
+
+.personalInfo label{
     display: flex;
     justify-content: center;
-    border: solid 2px black;
-    height: 600px;
+}
 
-} */
+.petsContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+select{
+    display: flex;
+    background-color: #ccc;
+    color: black;
+    justify-self: center;
+}
+option{
+    display: flex;
+    justify-self: center;
+    color: black;
+}
+label{
+    display: flex;
+    justify-self: center;
+}
+}
+
+.cats-container{
+    padding: 5%;
+}
+
+.dogs-container{
+    padding: 5%;
+}
