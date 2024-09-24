@@ -1,12 +1,12 @@
 import React from "react";
 
 function PetNum({formData, setFormData}) {
-return <div>
+return (<div>
     
     <div className="petsContainer">
         <div className="cats-container">
             <label>Cats</label><br></br>
-            <select name="pets-cats" id="cats" value={formData.cats} onChange={(event) => setFormData({...formData, cats: event.target.value })}>
+            <select name="pets-cats" id="cats" value={formData.cats} onChange={(event) => setFormData({...formData, cats: parseInt(event.target.value) })}>
                 <option value={0}>0</option>
                 <option value={1}>1</option>
                 <option value={2}>2</option>
@@ -22,7 +22,7 @@ return <div>
             </div>
             <div className="dogs-container">
             <label>Dogs</label><br></br>
-            <select name="pets-dogs" id="dogs" value={formData.dogs} onChange={(event) => setFormData({...formData, dogs: event.target.value })}>
+            <select name="pets-dogs" id="dogs" value={formData.dogs} onChange={(event) => setFormData({...formData, dogs: parseInt(event.target.value) })}>
                 <option value={0}>0</option>
                 <option value={1}>1</option>
                 <option value={2}>2</option>
@@ -40,7 +40,9 @@ return <div>
         <div className="note">
             <p>*** If there are over 10 animals in the household please contact us to discuss bulk orders! *** </p>
             </div>
-</div>;
+</div>);
+
+
 }
 
 export default PetNum;
