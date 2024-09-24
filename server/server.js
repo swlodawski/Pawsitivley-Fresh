@@ -24,6 +24,8 @@ const startApolloServer = async () => {
 
   app.use(cors());
 
+  app.use('/images', express.static(path.join(__dirname, '../client/src/assets/seed-images')));
+
   app.use(
     "/graphql",
     expressMiddleware(server, {
