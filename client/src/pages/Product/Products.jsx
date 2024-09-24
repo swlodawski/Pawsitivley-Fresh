@@ -32,7 +32,7 @@ const Products = () => {
       {products.map((product) => (
         <div key={product._id} className="product-card">
           <img
-            src={product.image} 
+            src={`http://localhost:3001${product.image}`}  // Fix the image path
             alt={product.name}
             className="product-image"
           />
