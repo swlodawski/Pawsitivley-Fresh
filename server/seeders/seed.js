@@ -19,7 +19,7 @@ const products = await Product.insertMany([
         description: 'Your pet will flip! This blend is great for fish loving felines looking for a tasty meal with lots of protein. Give it a try for your furry friend and watch them chow down.',
         image: '/images/cat-fish-removebg-preview.png',
         price: 25.99,
-        ingredients: ['Salmon', 'Cod', 'Egg', 'Fish Broth', 'Vitamin Blend'],
+        ingredients: ['Salmon', 'Cod', 'Eggs', 'Fish Broth', 'Vitamin Blend'],
         isDogFood: false
     },
     {
@@ -83,7 +83,7 @@ const products = await Product.insertMany([
         description: 'Nothing BAAAAAD here! If your pet is a lamb lover, they will clean their plate with this food. Veggies and brown rice round out a balanced meal perfect for even the choosiest pooch.',
         image: '/images/dog-lamb-removebg-preview.png',
         price: 27.99,
-        ingredients: ['Lamb', 'Bone Broth', 'Peas', 'Carrot', 'Brown Rice', 'Vitamin Blend'],
+        ingredients: ['Lamb', 'Bone Broth', 'Peas', 'Carrots', 'Brown Rice', 'Vitamin Blend'],
         isDogFood: true
     },
     {
