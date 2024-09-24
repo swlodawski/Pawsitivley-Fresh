@@ -124,7 +124,7 @@ const Products = () => {
               ) ? null : (
                 <div key={product._id} className="product-card">
                   <img
-                    src={product.image}
+                    src={`../../src/assets/seed-images/${product.image}`} 
                     alt={product.name}
                     className="product-image"
                   />
