@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery, gql } from '@apollo/client';  
-import './products.css';  
+import './Products.css';  
 
 const GET_PRODUCTS = gql`
   query GetProducts {
