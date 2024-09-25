@@ -111,26 +111,24 @@ console.log('Products successfully seeded!', products);
 console.log("Product Model:", Product);
 
 const pets = await Pet.insertMany([
-    {
-        animal: 'Dog',
-        name: 'Auggie',
-        size: 'Large',
-        allergies: ['Turkey', 'Chicken']
-    },
-
-    {
-        animal: 'Cat',
-        name: 'Oliver',
-        size: 'Small',
-        allergies: ['Soy']
-    },
-
-    {
-        animal: 'Dog',
-        name: 'Lucy',
-        size: 'Medium',
-        allergies: ['None']
-    },
+    { 
+        animal: "Dog",
+        name: "Auggie",
+        size: "Large",
+        allergies: ["Turkey", "Chicken", "Chicken Broth", "Bone Broth"],
+      },
+      { 
+        animal: "Cat",
+        name: "Oliver",
+        size: "Small",
+        allergies: ["Eggs"],
+      },
+      {
+        animal: "Dog",
+        name: "Lucy",
+        size: "Medium",
+        allergies: ["Vitamin Blend"],
+      },
 ]);
 
 console.log("Pets successfuly seeded!", pets);
