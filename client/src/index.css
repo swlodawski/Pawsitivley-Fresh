@@ -45,7 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--drk-green);
-  height: 125px;
+  height: 180px;
   width: 100%;
 }
 
@@ -159,4 +159,11 @@ button {
     width: 100%;
     margin-top: 10px;
   }
+}
+
+#cart {
+  font-size: 15px;
+  text-wrap: nowrap;
+  color: #162a15;
+  
 }

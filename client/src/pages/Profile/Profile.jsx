@@ -37,6 +37,9 @@ const Profile = () => {
       </div>
       <div className="button-container">
         <button id="add-pet-btn">Add Another Pet</button>
+        <button id="add-pet-btn">Update My Pet</button>
+        <button id="add-pet-btn">Delete An Existing Pet</button>
+        
       </div>
     </>
   );
