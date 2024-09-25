@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useQuery, gql } from "@apollo/client";
-import "./products.css";
+import './Products.css';
 
 // Query to get all the products in seed data
 const GET_PRODUCTS = gql`
