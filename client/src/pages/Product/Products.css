@@ -1,3 +1,6 @@
+:root {
+    font-family: 'Mooli';
+}
 
 .products-container {
     display: flex;
@@ -100,11 +103,43 @@
     text-align: center;
 }
 
+.select-pet-container {
+    margin: 50px 250px;
+    padding: 20px;
+    border: 10px solid #162a15;
+    border-radius: 20px;
+    display: flex; 
+    align-items: center; 
+    background-color: #a5c28e;
+}
+
+#pet-name-label {
+    font-size: 20px;
+    margin: 0px 70px; /* Add some space between the label and the button */
+}
+
+#select-pet-header {
+    text-align: center;
+    font-size: 35px;
+    padding: 0px;
+    margin: 40px;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+
+
+#pet-result-header {
+    text-align: center;
+    color:#162a15;
+}
+
 @media (max-width: 600px) {
     .product-card {
         width: 90%;
         margin: 16px auto;
     }
 }
-  
-  
