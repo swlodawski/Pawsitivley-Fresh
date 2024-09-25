@@ -91,7 +91,7 @@ const Products = () => {
     } else {
       setFilteredProducts(products);
     }
-  }, [petProductsData, products, selectedPetId]);
+  }, []);
 
   // Get the selected pet
   const selectedPet = pets.find((pet) => pet._id === selectedPetId);
