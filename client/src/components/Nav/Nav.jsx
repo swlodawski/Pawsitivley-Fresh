@@ -37,6 +37,11 @@ function Nav() {
                         <h3 id='log-in' className='mooli-regular'>login</h3>
                     </Link> 
                     </button>
+                    <button>
+                    
+                        <h3 id='cart' className='mooli-regular'> View Cart 🛒</h3>
+                    
+                    </button>
                
                 </li> 
 

@@ -159,6 +159,7 @@ const Products = () => {
                 <p className="category">
                   {product.isDogFood ? "Dog Food" : "Cat Food"}
                 </p>
+                <button id="add-cart-btn">🛒  Add To Cart </button>
               </div>
             ))
           )}

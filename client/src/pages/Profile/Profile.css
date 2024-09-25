@@ -69,14 +69,15 @@
     color: var(--drk-green);
     border: 4px solid var(--drk-green);
     font-size: 20px;
-    padding: 30px 100px;
+    padding: 25px 120px;
     text-wrap: nowrap;
     font-weight: bold; 
+    margin: 35px;
 }
 
 .button-container {
     display: flex;
-    margin-right: 265px;
+    /* margin-right: 265px; */
     justify-content: center; 
     align-items: center;
     margin-top: 20px;
