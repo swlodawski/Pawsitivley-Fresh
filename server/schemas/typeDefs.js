@@ -8,6 +8,7 @@ type User {
 }
 
 type Pet {
+    name: String
     animal: String
     size: String
     allergies: [String]

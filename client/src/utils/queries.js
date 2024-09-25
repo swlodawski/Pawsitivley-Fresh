@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 export const QUERY_PET = gql`
 {
-pet {
+pets {
     animal
     name
     size
@@ -12,7 +12,7 @@ pet {
 
 export const QUERY_PRODUCT = gql`
 {
-product {
+products {
     name
     description
     image
@@ -24,7 +24,7 @@ product {
 
 export const QUERY_ORDER = gql`
 {
-order {
+orders {
     purchaseDate
     product {
         name
@@ -44,7 +44,7 @@ order {
 
 export const QUERY_USER = gql`
 {
-user {
+users {
     userName
     email
     password
