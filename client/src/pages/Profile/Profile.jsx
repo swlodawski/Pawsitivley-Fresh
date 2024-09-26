@@ -59,13 +59,15 @@ const Profile = () => {
             <p className="allergies">
               <strong>Allergies:</strong> {pet.allergies.join(', ')}
             </p>
+            <div className="button-container">
+              <button className="action-btn" onClick={() => handleUpdatePet(index)}>Update Pet</button>
+              <button className="action-btn" onClick={() => handleDeletePet(index)}>Delete Pet</button>
+            </div>
           </div>
         ))}
       </div>
       <div className="button-container">
         <button id="add-pet-btn" onClick={handleAddPet}>Add Another Pet</button>
-        <button className="action-btn" onClick={() => handleUpdatePet(0)}>Update My Pet</button>
-        <button className="action-btn" onClick={() => handleDeletePet(0)}>Delete Existing Pet</button>
       </div>
     </>
   );

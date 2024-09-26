@@ -115,7 +115,7 @@ const pets = await Pet.insertMany([
         animal: "Dog",
         name: "Auggie",
         size: "Large",
-        allergies: ["Turkey", "Chicken", "Chicken Broth", "Bone Broth"],
+        allergies: ["Turkey", "Chicken", "Chicken Broth"],
       },
       { 
         animal: "Cat",
