@@ -1,10 +1,9 @@
 :root {
-    --lt-green: #a5ce85;
-    --orange: #fca94d;
-    --drk-green: #162a15;
+    --lt-green: #A5CE85;
+    --orange: #FCA94D;
+    --drk-green: #162A15;
     font-family: 'Mooli';
 }
-
 #pets-header {
     text-align: center;
     color: var(--drk-green);
@@ -14,17 +13,16 @@
     margin: 40px;
     border-radius: 10px;
 }
-
 .pets-container {
     margin: 0px 50px;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     background-color: var(--lt-green);
     border-radius: 20px;
     padding: 40px;
+    margin: 40px;
 }
-
 .pet-profile {
     border: 4px solid var(--drk-green);
     background-color: rgb(208, 237, 213);
@@ -32,58 +30,121 @@
     padding: 0px 10px;
     margin: 10px 30px;
     width: 200px;
-    height: 300px; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 .pets-container h2 {
-    font-size: 35px;
+    font-size: 30px;
     color: white;
     background-color: var(--drk-green);
-    padding: 15px 40px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 10px 40px;
+    position: absolute;
     border-radius: 10px;
     font-weight: bold;
-    margin-top: 0px;
+    margin-top: -205px;
 }
-
 .pets-container p {
     color: var(--drk-green);
     text-align: center;
     padding: 0;
     margin: 5px;
-    
 }
-
 .animal, .size {
     font-size: 25px;
 }
-
-
-#add-pet-btn {
+#add-pet-btn, .action-btn{
     background-color: var(--orange);
     color: var(--drk-green);
     border: 4px solid var(--drk-green);
     font-size: 20px;
     padding: 25px 120px;
     text-wrap: nowrap;
-    font-weight: bold; 
+    font-weight: bold;
     margin: 35px;
 }
 
+#add-pet-btn:hover, .action-btn:hover {
+    background-color: var(--drk-green);
+    color: white;
+    cursor: pointer;
+  }
+
 .button-container {
     display: flex;
-    /* margin-right: 265px; */
-    justify-content: center; 
-    align-items: center;
+    justify-content: center;
+    gap: 20px;
     margin-top: 20px;
 }
-
 /* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #pets-header {
+        font-size: 40px;
+        padding: 20px;
+        margin: 20px;
+    }
+    .pets-container {
+        margin: 0 20px;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .pet-profile {
+        width: 180px;
+        height: 280px;
+        margin: 15px 10px;
+    }
+    .pets-container h2 {
+        font-size: 28px;
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+    .animal, .size {
+        font-size: 22px;
+    }
+    #add-pet-btn {
+        font-size: 18px;
+        padding: 20px 80px;
+    }
+    .button-container {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 480px) {
+    #pets-header {
+        font-size: 30px;
+        padding: 15px;
+        margin: 10px;
+    }
+    .pets-container {
+        margin: 0 10px;
+        padding: 10px;
+    }
+    .pet-profile {
+        width: 150px;
+        height: 250px;
+        margin: 10px 5px;
+    }
+    .pets-container h2 {
+        font-size: 24px;
+        padding: 8px 15px;
+    }
+    .animal, .size {
+        font-size: 20px;
+    }
+    #add-pet-btn {
+        font-size: 16px;
+        padding: 15px 60px;
+    }
+    .button-container {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}
+
+
 @media (max-width: 768px) {
     #pets-header {
         font-size: 40px;
@@ -92,10 +153,38 @@
     }
 
     .pets-container {
-        margin: 0 20px;
-        padding: 20px;
         flex-direction: column;
     }
+
+    .pet-profile {
+        width: 180px;
+        height: 300px;
+    }
+
+    #add-pet-btn, .action-btn {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #pets-header {
+        font-size: 40px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .pets-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
 
     .pet-profile {
         width: 180px;
